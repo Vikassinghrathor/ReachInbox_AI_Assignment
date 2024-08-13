@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# ReachInBox-Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This repository contains the code for Reachinbox frontend  App using React with Typescript for an assignment given by Reachinbox.
 
-## Available Scripts
+## Technologies Used ( Frontend )
+  - Typescript
+  - React
+  - Tailwind css
 
-In the project directory, you can run:
+## Deployment
 
-### `npm start`
+The application is deployed on netlify and can be accessed [here]().
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Demo Video :- 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Login Page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Login_Page](https://github.com/user-attachments/assets/e8b9d151-011d-4fb1-93b1-b95fc3640255)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Landing Page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Landing_Page](https://github.com/user-attachments/assets/222cdd72-365c-4af5-85bf-b0428b492e0e)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Deshboard with Dark Mode
+ 
+![DashboardBlackTheme](https://github.com/user-attachments/assets/ccec435d-99c3-4a80-9ac7-f3ee7742f225)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Dashboard with Light Mode
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![DashboardWhiteTheme](https://github.com/user-attachments/assets/e4e13649-55a4-401a-b8b2-17221d9d9cb8)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Delete Email 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Delete_Mail](https://github.com/user-attachments/assets/c1f61494-51ee-4d3e-ae21-da063a1144ff)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+ # How to Run <br/>
+ 
+   <h2>Installation</h2>
+   
+   Clone the repository:   ``` git clone https://github.com/Vikassinghrathor/ReachInbox_AI_Assignment.git  ``` <br/>
+   Navigate to the project directory:   ``` cd client ``` <br/>
+   Install the dependencies:   ``` npm install ``` <br/>
+   Start the development server:   ``` npm run start ``` <br/>
+   Open your browser and visit:   ``` http://localhost:3000 ``` <br/>
+   
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ## Features 
+   
+  - Authentication
+  - Get Emails
+  - Post (send) Email
+  - Delete Email
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   <h2>Endpoints</h2>
+   <h3>All Emails</h3>
+   <pre><code>GET {{baseurl}}/onebox/list </code></pre>
 
-### Advanced Configuration
+   <h3>All Emails from Onebox</h3>
+   <pre><code>GET {{baseurl}}/onebox/messages/:thread_id </code></pre>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   <h3>Add Onebox Mail</h3>
+   <pre><code>POST {{baseurl}}/onebox/reply/:thread_id </code></pre>
 
-### Deployment
+   <h3>Delete Email</h3>
+   <pre><code>DELETE {{baseurl}}/onebox/messages/:thread_id </code></pre>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   <p>Feel free to explore and integrate these endpoints into your application.</p>
+  
