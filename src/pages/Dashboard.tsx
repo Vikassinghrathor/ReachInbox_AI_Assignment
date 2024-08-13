@@ -4,6 +4,8 @@ import { useLocation, useNavigate } from 'react-router';
 import { jwtDecode } from "jwt-decode";
 import { ChevronDown } from 'lucide-react';
 import { deleteMailResponse, getMailList, getMailMasseges } from "../services/api";
+import Theme from '../components/Theme';
+import DashboardHeader from '../components/DashboardHeader';
 const Dashboard = () => {
   const [currColor, setCurrColor] = useState<Boolean>(true);
   const [data , setData ]= useState([]);
@@ -114,6 +116,15 @@ const Dashboard = () => {
       <div className='w-[56px] h-screen'>
       <Sidebar currColor={currColor} username = {username} showEmailDesktop={showEmailDesktop} handleChange={handleChange}/>
       </div>
+      <div  className='w-full max-w-[1383]'>
+                <div className={` h-[64px] flex justify-between py-4 pl-8 ${currColor ? "bg-[#1F1F1F]" : "bg-white"} border ${currColor ? "border-gray-700":"border-gray-300" } `}>
+                    <p className={`w-full text-left text-xl ${currColor ? "text-white-900" : "text-black-900"} `}>Onebox</p>
+                    <div className='w-[210px] h-8 mr-5 flex justify-center items-center gap-5'>
+                      <Theme currColor={currColor} onClick={()=> setCurrColor(!currColor)} />
+                      <DashboardHeader/>
+                    </div>
+                </div>
+                </div>
     </div>
     </>
   )
