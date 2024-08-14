@@ -14,6 +14,8 @@ The application is deployed on netlify and can be accessed [here](https://66bc3c
 
 ## Demo Video :- 
 
+(https://www.loom.com/share/b378ce875856460e9ffff8a2c64439c7?sid=3815c708-e103-4b1d-b93f-c6583e001339)
+
 
 ## Login Page
 
