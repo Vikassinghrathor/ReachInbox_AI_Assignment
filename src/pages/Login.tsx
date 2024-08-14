@@ -13,7 +13,7 @@ const Login = () => {
                     <p  className=' text-xl mb-6'>Create new account</p>
                     <div className='rounded border border-gray-500 h-12 flex justify-center items-center gap-2.5  mb-12'>
                         <img src="https://static.vecteezy.com/system/resources/previews/013/760/951/non_2x/colourful-google-logo-in-dark-background-free-vector.jpg" alt=""  className='bg-black rounded-full h-5 mt-0.5'/>
-                        <Link  to="https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=https://reachinbox-ai-assignment-ke1wm4gxa-vikassinghrathors-projects.vercel.app/dashboard" className='text-sm text-gray-400 cursor-pointer'> Sign Up with Google </Link>
+                        <Link  to="https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=https://reachinbox-ai-gamma.vercel.app/dashboard" className='text-sm text-gray-400 cursor-pointer'> Sign Up with Google </Link>
                     </div>
                     <p className='w-[195px] h-12 bg-[#4B63DD] rounded m-auto text-center pt-2.5 mb-6 cursor-pointer'>Create an account</p>
                     <p className='text-base text-gray-500'>Already have an account? <span>Sign In</span></p>
